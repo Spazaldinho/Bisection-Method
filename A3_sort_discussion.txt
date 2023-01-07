@@ -1,0 +1,33 @@
+1)
+def selection_sort(my_list):
+
+  n = len(my_list):
+
+  for j in range(n - 1)
+
+    current_min = j
+
+    for i in range(j + 1, n):
+
+       if my_list[i] < my_list[current_min]:
+
+         current_min = i
+
+    min_val = my_list.pop(current_min)
+    
+    my_list.append(min)
+
+    for k in reversed(range(1, n)):
+
+        my_list[k] = my_list[k-1]
+
+    my_list[0] = min_val
+
+   return(my_list)
+
+2)
+The number of loops present in a program and their characteristics are key when considering its time-complexity.
+This program had two loops, both of which iterated through the entire list. This means that it had a time-
+complexity of n*n, or n^2, where n is the length of the list. 
+By adding a third loop that also iterates through the entire list of length n, we now have a time complexity of
+(n^2)*n, which is equal to n^3.
